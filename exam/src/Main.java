@@ -1,15 +1,12 @@
-import entities.Register;
-import service.RegisterService;
-import view.LoginMenu;
-
+import entities.User;
+import views.LoginMenu;
 import java.util.ArrayList;
 import java.util.Scanner;
-
 public class Main {
     public static void main(String[] args) {
-        ArrayList<Register> registers = new ArrayList<>();
         Scanner sc = new Scanner(System.in);
+        ArrayList<User> users = new ArrayList<>();
         LoginMenu loginMenu = new LoginMenu();
-        loginMenu.selectDisplayMenu(sc, registers);
+        loginMenu.selectDisplayMenu(sc, users);
     }
 }

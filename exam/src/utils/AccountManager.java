@@ -1,12 +1,9 @@
 package utils;
 
 public class AccountManager {
-    public static String USERNAME = "duc";
-    public static String PASSWORD = "123456";
-    public static String EMAIL = "dinhtrongduc@gmail.com";
-
-    public AccountManager() {
-    }
+    private static String USERNAME;
+    private static String PASSWORD;
+    private static String EMAIL;
 
     public static String getUSERNAME() {
         return USERNAME;
